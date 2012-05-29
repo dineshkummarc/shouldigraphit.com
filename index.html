@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Should I Graph It?</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      footer {
+        padding: 5px 10px 5px 10px;
+        border-top: 1px solid #eee;
+      }
+      .push { height: 363px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="span6 offset4">
+          <h1 id='maintextbox'>Does it move?</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span2 offset4">
+          <button class="btn btn-primary btn-large" type="submit"
+            onclick="yes();">
+            YES
+          </button>
+        </div>
+        <div class="span2">
+          <button class="btn btn-primary btn-large" type="submit"
+            onclick="nope();">
+            NO
+          </button>
+        </div>
+      </div>
+      <div class="push"><!--//--></div>
+      <footer class="container-fluid">
+        <p> by
+        <a href="https://twitter.com/mrtazz">@mrtazz</a>, hosted on
+        <a href="https://github.com/mrtazz/shouldigraphit.com">Github</a>,
+         inspired by <a href="https://twitter.com/lozzd">@lozzd</a>
+         and <a
+           href="http://codeascraft.etsy.com/2011/02/15/measure-anything-measure-everything/">
+           The Church of Graphs</a>
+        </p>
+      </footer>
+    </div>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      var yes = function()
+      {
+        $('#maintextbox').html('Graph it.');
+      };
+      var nope = function()
+      {
+        $('#maintextbox').html('Graph it anyways.');
+      };
+
+    </script>
+    <script type="text/javascript">
+      var _gauges = _gauges || [];
+      (function() {
+       var t   = document.createElement('script');
+       t.type  = 'text/javascript';
+       t.async = true;
+       t.id    = 'gauges-tracker';
+       t.setAttribute('data-site-id', '4fc4240e613f5d2121000047');
+       t.src = '//secure.gaug.es/track.js';
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(t, s);
+       })();
+    </script>
+  </body>
+</html>
